@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watshy</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="header-container">
+        <h1 class="logo">Watshy</h1>
+        <div class="menu-icon">&#9776;</div>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#about">À propos</a>
+            <a class="dropdown-item" href="#projects">Projets</a>
+            <a class="dropdown-item" href="#contact">Contact</a>
+        </div>
+        <nav class="nav" id="nav">
+            <a href="#about">À propos</a>
+            <a href="#projects">Projets</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-container">
+            <h1 class="hero-text">Bienvenue sur mon Portfolio</h1>
+            <p class="hero-subtext">Je suis William, développeur web et un passionné de jeux vidéos</p>
+            <a href="#projects" class="hero-button">Voir mes projets</a>
+        </section>
+
+        <section id="about" class="about-container">
+            <h2 class="about-title">À propos de moi</h2>
+            <p class="about-text">
+                Je suis William, un développeur web passionné par les jeux vidéos et les technologies web.
+                J'ai de l'expérience dans Git/Github, React JS, PHP et d'autres...
+                Et bien sûr j'aime créer des applications web interactives et dynamiques.
+            </p>
+        </section>
+
+        <section id="projects" class="projects-container">
+            <h2 class="projects-title">Mes Projets</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3 class="project-title">Projet Spotify</h3>
+                    <p class="project-description">
+                        Refonte du site Spotify.
+                        Utilisation de VueJS pour la partie front-end.
+                        Utilisation de l'API Spotify pour le back-end.
+                    </p>
+                </div>
+                <div class="project-card">
+                    <h3 class="project-title">Projet Freewup</h3>
+                    <p class="project-description">
+                        Création d'une application web pour les freelances.
+                        Projet de groupe avec des Marketteurs et des Designers.
+                        Utilisation de Symfony pour le back-end et Twig pour le front-end.
+                    </p>
+                </div>
+                <div class="project-card">
+                    <h3 class="project-title">Stage Groupe UP</h3>
+                    <p class="project-description">
+                        Développement en Symfony et Jquery.
+                        En charge d'une fonctionnalité d'import d'un fichier Excel en base de données.
+                        Refonte de tous le style de l'application.
+                        Partcipations à une formation RGPD.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-container">
+            <h2 class="contact-title">Contactez-moi</h2>
+            <form class="contact-form" id="contact-form">
+                <input type="text" name="name" placeholder="Votre nom - prénom" required />
+                <input type="email" name="email" placeholder="Votre email" required />
+                <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+                <button type="submit" class="submit-button">Envoyer</button>
+            </form>
+        </section>
+
+        <footer class="footer-container">
+            <div class="social-links">
+                <a href="https://github.com/watshy77" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/william-queva" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <p class="copyright">
+                &copy; <span id="current-year"></span> Watshy. Tous droits réservés.
+            </p>
+        </footer>
+    </main>
+</body>
+
+</html>
